@@ -8,6 +8,8 @@
     --bela: #fff;
     --padding: 100px 0;
     --headings: 3rem;
+    --fontSize: 16px;
+    --transition: .4s ease;
 }
 /*********************
 basic styles
@@ -16,6 +18,19 @@ basic styles
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: var(--fontSize);
+    line-height: 1.6;
+    color: var(--siva);
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Quantico', sans-serif;
+}
+a {
+    text-decoration: none;
+    transition: var(--transition);
 }
 /*********************
 grid sistem
@@ -44,6 +59,53 @@ grid sistem
 [class*="col-"] {
     float: left;
 }
+/*********************
+nav
+*********************/
+nav {
+    height: 80px;
+    line-height: 80px;
+}
+nav .logo {
+    float: left;
+    text-transform: uppercase;
+    font-size: 1.7rem;
+    font-family: 'Quantico', sans-serif;
+    color: var(--crna);
+    padding-left: 100px;
+}
+nav ul {
+    float: right;
+}
+nav ul li {
+    display: inline-block;
+}
+nav i {
+    color: var(--zelena);
+}
+nav ul li a {
+    padding: 0 30px;
+    color: var(--crna);
+    text-transform: uppercase;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*********************
+responsive
+*********************/
 @media(max-width: 767px) {
     [class*="col-"] {
         width: 100%;
