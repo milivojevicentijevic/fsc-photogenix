@@ -32,6 +32,16 @@ a {
     text-decoration: none;
     transition: var(--transition);
 }
+button {
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    border: none;
+    transition: var(--transition);
+    font-family: 'Quantico', sans-serif;
+    text-transform: uppercase;
+    margin-top: 40px;
+}
 /*********************
 grid sistem
 *********************/
@@ -88,11 +98,41 @@ nav ul li a {
     color: var(--crna);
     text-transform: uppercase;
 }
-
-
-
-
-
+nav ul li.active::after, 
+nav ul li:hover::after {
+    position: relative;
+    display: block;
+    content: "";
+    background-color: var(--zelena);
+    height: 3px;
+    bottom: 3px;
+}
+/*********************
+H O M E
+*********************/
+/*********************
+header
+*********************/
+header {
+    background-image: linear-gradient( rgba(30, 30, 30, .5),  rgba(30, 30, 30, .5)), url(img/header.jpg);
+    background-position: center;
+    background-size: cover;
+    padding: 100px;
+    text-align: right;
+    color: var(--bela);
+}
+header h1 {
+    font-size: 8rem;
+}
+header p {
+    font-size: 1.2rem;
+}
+header button {
+    background-color: var(--zuta);
+}
+header button:hover {
+    background-color: var(--zelena);
+}
 
 
 
