@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css?family=Quantico:400,700|Roboto:300,400&display=swap');
+:root {
+    --crna: #1e1e1e;  /* rgba(30, 30, 30, .9) */
+    --zelena: #78bc62; /* rgb(120, 188, 98) */
+    --zuta: #ffd944;   /* rgb(255, 217, 68) */
+    --siva: #102438;
+    --svetloSiva: #f4f4f4;
+    --bela: #fff;
+    --padding: 100px 0;
+    --headings: 3rem;
+}
+/*********************
+basic styles
+*********************/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*********************
+grid sistem
+*********************/
+.row {
+    width: 100%;
+}
+.row::after {
+    display: block;
+    content: ""; 
+    clear: both;
+}
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+.col-pet {width: 20%;}
+[class*="col-"] {
+    float: left;
+}
+@media(max-width: 767px) {
+    [class*="col-"] {
+        width: 100%;
+    }
+}
