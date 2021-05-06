@@ -116,6 +116,78 @@ nav ul li:hover::after {
     bottom: 3px;
 }
 /*********************
+footer
+*********************/
+footer {
+    background-color: var(--crna);
+    padding: var(--padding);
+    color: var(--bela);
+}
+footer ul li {
+    list-style: none;
+}
+footer .col-3 {
+    padding: 10px;
+}
+footer img {
+    width: 20%;
+}
+footer a {
+    color: var(--svetloSiva);
+    margin-right: 10px;
+}
+footer i {
+    color: var(--zelena);
+}
+footer i:hover {
+    color: var(--zuta);
+}
+footer h4 {
+    font-size: 1.5rem;
+    padding-bottom: 30px;
+}
+footer h5 {
+    font-size: 1.2rem;
+    padding-bottom: 30px;
+}
+footer input {
+    padding: 15px;
+    border: 2px solid var(--zelena);
+    background-color: var(--crna);
+    width: 150px;
+}
+footer input::placeholder {
+    color: var(--svetloSiva);
+    font-size: 1rem;
+}
+footer button {
+    background-color: var(--zelena);
+    transition: var(--transtion);
+    border: 2px solid var(--zelena);
+    position: relative;
+    left: -5px;
+    top: 2px;
+}
+footer button i {
+    color: var(--crna);
+}
+footer button i:hover {
+    color: var(--bela);
+}
+footer .copy {
+    text-align: center;
+}
+footer .copy::before {
+    content: "";
+    display: block;
+    background-color: #3e3636;
+    height: 1px;
+    width: 70%;
+    margin: 30px auto;
+}
+
+
+/*********************
 H O M E
 *********************/
 /*********************
