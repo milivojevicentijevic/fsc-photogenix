@@ -235,7 +235,8 @@ services
 .services .text h3 {
     font-size: 2rem;
 }
-.services .text h3::after {
+.services .text h3::after,
+.pricing h3::after {
     display: block;
     content: "";
     margin: 20px auto 30px;
@@ -423,13 +424,46 @@ testimonials
     color: var(--zelena);
 }
 
-
 /*********************
 P R I C I N G
+*********************/
+/*********************
+pricingHeader
 *********************/
 .pricingHeader {
     height: 50vh;
 }
+/*********************
+pricing
+*********************/
+.pricing {
+    padding: var(--padding);
+    text-align: center;
+}
+.pricing .wrapper {
+    margin: 30px;
+    box-shadow: 0 0 25px lightgray;
+    padding: 30px;
+    transition: var(--transition);
+}
+.pricing .wrapper:hover {
+    box-shadow: 0 0 25px gray;
+}
+.pricing ul {
+    list-style: none;
+}
+.pricing ul li {
+    line-height: 2.5;
+}
+.pricing button {
+    background-color: var(--zelena);
+    margin-top: 20px;
+}
+.pricing button:hover {
+    background-color: var(--crna);
+    color: var(--bela);
+}
+
 /*********************
 C O N T A C T
 *********************/
