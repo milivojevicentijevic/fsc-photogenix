@@ -467,8 +467,45 @@ pricing
 /*********************
 C O N T A C T
 *********************/
-
-
+/*********************
+contact
+*********************/
+.contact {
+    padding: var(--padding);
+}
+.contact i {
+    font-size: 2.8rem;
+    color: var(--zelena);
+    margin-top: 10px;
+}
+.contact h2 + p {
+    padding-bottom: 20px;
+}
+.contact h5 {
+    font-size: 1.5rem;
+}
+.contact form input,
+.contact form textarea {
+    width: 100%;
+    border: 1px solid var(--zelena);
+    border-radius: 2px;
+    padding: 10px;
+}
+.contact form input {
+    margin-bottom: 10px;
+}
+.contact ::placeholder {
+    color: gray;
+}
+.contact :focus {
+    background-color: var(--zelena);
+}
+.contact button {
+    background-color: var(--zelena);
+}
+.contact button:hover {
+    background-color: var(--zuta);
+}
 
 
 /*********************
