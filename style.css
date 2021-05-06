@@ -42,6 +42,10 @@ button {
     text-transform: uppercase;
     margin-top: 40px;
 }
+.container {
+    width: 80%;
+    margin: auto;
+}
 /*********************
 grid sistem
 *********************/
@@ -117,7 +121,7 @@ header {
     background-image: linear-gradient( rgba(30, 30, 30, .5),  rgba(30, 30, 30, .5)), url(img/header.jpg);
     background-position: center;
     background-size: cover;
-    padding: 100px;
+    padding: 100px 20px 200px 20px;
     text-align: right;
     color: var(--bela);
 }
@@ -133,9 +137,37 @@ header button {
 header button:hover {
     background-color: var(--zelena);
 }
-
-
-
+/*********************
+services
+*********************/
+.services img {
+    width: 100%;
+}
+.services .wrapper {
+    box-shadow: 0 0 25px lightgray;
+    margin: -110px 20px 20px 20px;
+    padding: 20px;
+    transition: var(--transition);
+    background-color: var(--bela);
+}
+.services .wrapper:hover {
+    box-shadow: 0 0 25px gray;
+}
+.services .text {
+    text-align: center;
+    padding: 20px;
+}
+.services .text h3 {
+    font-size: 2rem;
+}
+.services .text h3::after {
+    display: block;
+    content: "";
+    margin: 20px auto 30px;
+    height: 2px;
+    width: 60%;
+    background-color: lightgray;
+}
 
 
 
