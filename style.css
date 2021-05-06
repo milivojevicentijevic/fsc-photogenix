@@ -173,7 +173,7 @@ footer button i {
 }
 footer button i:hover {
     color: var(--bela);
-}
+}       
 footer .copy {
     text-align: center;
 }
@@ -185,7 +185,6 @@ footer .copy::before {
     width: 70%;
     margin: 30px auto;
 }
-
 
 /*********************
 H O M E
@@ -290,7 +289,18 @@ works
     background-color: var(--zuta);
 }
 
-
+/*********************
+A B O U T
+*********************/
+/*********************
+P R I C I N G
+*********************/
+.pricingHeader {
+    height: 50vh;
+}
+/*********************
+C O N T A C T
+*********************/
 
 
 
