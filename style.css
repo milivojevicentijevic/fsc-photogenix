@@ -378,6 +378,51 @@ promote
     background-color: var(--bela);
     color: var(--crna);
 }
+/*********************
+testimonials
+*********************/
+.testimonials {
+    padding: var(--padding);
+}
+.testimonials h2 {
+    text-align: center;
+}
+.testimonials h2 + p {
+    text-align: center;
+    padding-bottom: 40px;
+}
+.testimonials img {
+    width: 40%;
+    float: left;
+    border-radius: 50%;
+    margin-bottom: 30px;
+}
+.testimonials .hgroup {
+    float: left;
+    text-align: right;
+    padding-top: 40px;
+    padding-left: 30px;
+}
+.testimonials .col-4::before {
+    content: "";
+    display: block;
+    height: 4px;
+    background-color: var(--svetloSiva);
+    margin-bottom: 20px;
+}
+.clearfix {
+    clear: both;
+}
+.testimonials .col-4 {
+    padding: 30px;
+}
+.testimonials .hgroup h3 {
+    font-size: 1.3rem;
+}
+.testimonials .hgroup p {
+    color: var(--zelena);
+}
+
 
 /*********************
 P R I C I N G
